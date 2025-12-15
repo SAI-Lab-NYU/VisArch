@@ -9,7 +9,7 @@ banner:
   start_date: XX Month
   end_date: XX Month
   year: 2026
-  location: Pittsburgh, USA
+  location: Pittsburgh, PA, USA
 # Add a button link right under the top (e.g. JupyterBook, url can be local file or https://)
   links:
   # - url: intro.html

@@ -1,11 +1,11 @@
 repo_directory: html
-name: UW Hackweek
+name: VisArch
 apply:
   url: '#'
   title: Application coming soon
 hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
-  description: An awesome learning event.
+  description: VisArch: A Workshop on Systems and Architectures for Neural Rendering, AR/VR, and Visual Computing.
   start_date: XX Month
   end_date: XX Month
   year: 2023

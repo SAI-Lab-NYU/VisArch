@@ -19,9 +19,7 @@ banner:
 # The opening session of the event with UTC offset
 event_countdown: "2024-08-07T08:30:00-07:00"
 about:
-  description: Hackweeks are participant-driven events that strive to create
-    welcoming spaces for participants to learn new things, build community and
-    gain hands-on experience with collaboration and team science
+  description: VisArch is a Workshop on Systems and Architectures for Neural Rendering, AR/VR, and Visual Computing.
   learn_more: https://escience.washington.edu/using-data-science/hackweeks
   links:
     - url: '#'

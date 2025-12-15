@@ -5,7 +5,7 @@ apply:
   title: Application coming soon
 hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
-  description: VisArch: A Workshop on Systems and Architectures for Neural Rendering, AR/VR, and Visual Computing.
+  description: "VisArch: A Workshop on Systems and Architectures for Neural Rendering, AR/VR, and Visual Computing."
   start_date: XX Month
   end_date: XX Month
   year: 2023

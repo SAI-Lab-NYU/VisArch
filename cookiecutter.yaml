@@ -8,7 +8,7 @@ banner:
   description: "VisArch: A Workshop on Systems and Architectures for Neural Rendering, AR/VR, and Visual Computing."
   start_date: XX Month
   end_date: XX Month
-  year: 2023
+  year: 2026
   location: Seattle, WA
 # Add a button link right under the top (e.g. JupyterBook, url can be local file or https://)
   links:

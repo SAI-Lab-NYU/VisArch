@@ -6,9 +6,9 @@ apply:
 hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
   description: "VisArch: A Workshop on Systems and Architectures for Neural Rendering, AR/VR, and Visual Computing."
-  start_date: Sunday, March 22, 2026
-  end_date: 
-  year: 2026
+  start_date: Sunday, March 22 
+  end_date: 2026
+  year: ""
   location: Pittsburgh, PA, USA
 # Add a button link right under the top (e.g. JupyterBook, url can be local file or https://)
   links:

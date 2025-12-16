@@ -214,13 +214,14 @@
 
 <section id="call-for-papers-section" class="call-for-papers-section section theme-bg-light">
   <h2 class="text-center">{{ cookiecutter.call_for_papers.title }}</h2>
-  <ul>
-    {% for topic in cookiecutter.call_for_papers.topics %}
-      <li>{{ topic }}</li>
-    {% endfor %}
-  </ul>
+  <div class="d-flex justify-content-center">
+    <ul class="text-start" style="max-width: 600px;">
+      {% for topic in cookiecutter.call_for_papers.topics %}
+        <li>{{ topic }}</li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
-
 <!--//about-section-->
 
 {%- if cookiecutter.schedule %}

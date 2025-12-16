@@ -9,7 +9,8 @@ banner:
   start_date: Sunday, March 22, 2026 
   end_date: ""
   year: ""
-  location: Pittsburgh, PA, USA (co-located with ASPLOS'26)
+  location: Pittsburgh, PA, USA
+  main_conference: Co-located with ASPLOS'26
 # Add a button link right under the top (e.g. JupyterBook, url can be local file or https://)
   links:
   # - url: intro.html

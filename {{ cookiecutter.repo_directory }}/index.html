@@ -213,8 +213,8 @@
 </section>
 
 <section id="call-for-papers-section" class="call-for-papers-section section theme-bg-light">
-  <h2>{{ cookiecutter.call_for_papers.title }}</h2>
-  <ul>
+  <h2 class="text-center">{{ cookiecutter.call_for_papers.title }}</h2>
+  <ul class="text-center list-unstyled">
     {% for topic in cookiecutter.call_for_papers.topics %}
       <li>{{ topic }}</li>
     {% endfor %}

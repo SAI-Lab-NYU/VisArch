@@ -42,7 +42,8 @@ call_for_papers:
 #redirect:
 #    url: https://go.somehwere.else
 team:
-  !include team/team.yaml
+  !include team.yaml
+  # !include team/team.yaml
 schedule:
   !include schedule.yaml
 sponsors:

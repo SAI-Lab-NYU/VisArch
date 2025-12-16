@@ -211,6 +211,16 @@
         </div>
     </div>
 </section>
+
+<section class="call-for-papers my-5">
+  <h2>{{ cookiecutter.call_for_papers.title }}</h2>
+  <ul>
+    {% for topic in cookiecutter.call_for_papers.topics %}
+      <li>{{ topic }}</li>
+    {% endfor %}
+  </ul>
+</section>
+
 <!--//about-section-->
 
 {%- if cookiecutter.schedule %}

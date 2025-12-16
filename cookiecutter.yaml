@@ -26,8 +26,18 @@ about:
     - url: '#'
       title: A sample link
       new_window: True
-applicant_info: UW Hackweek 2023 will take place in October 2023 (virtual or in-person
-  TBD). Applications have not yet opened, but should be anticipated in September 2023.
+applicant_info: VisArch will take place in March 22, 2026. Applications have not yet opened.
+call_for_papers:
+  title: "Call for Papers/Posters"
+  topics:
+    - "Neural rendering, Gaussian Splatting, and Neural Radiance Fields (NeRF)"
+    - "Systems and architectures for AR/VR/XR computing"
+    - "Low-latency, low-power pipelines for visual sensing and display"
+    - "Hardware acceleration for visual and perception-driven workloads"
+    - "Sensor fusion and real-time 3D reconstruction"
+    - "Distributed and edge–cloud systems for visual processing"
+    - "Simulation, benchmarks, and datasets for neural rendering and AR/VR"
+    - "Applications in robotics, telepresence, and embodied AI"
 # Redirect the site to a different domain.
 #redirect:
 #    url: https://go.somehwere.else

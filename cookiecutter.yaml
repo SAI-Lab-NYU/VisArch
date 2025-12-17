@@ -41,11 +41,11 @@ call_for_papers:
 # Redirect the site to a different domain.
 #redirect:
 #    url: https://go.somehwere.else
+schedule:
+  !include schedule.yaml
 team:
   !include team.yaml
   # !include team/team.yaml
-schedule:
-  !include schedule.yaml
 sponsors:
   description: ''
   organizations:

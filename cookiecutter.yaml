@@ -5,7 +5,7 @@ apply:
   title: Application coming soon
 hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
-  description: "A Workshop on Systems and Architectures for Neural Rendering, AR/VR, and Visual Computing."
+  description: "" #"A Workshop on Systems and Architectures for Neural Rendering, AR/VR, and Visual Computing."
   start_date: Sunday, March 22, 2026 
   end_date: ""
   year: ""

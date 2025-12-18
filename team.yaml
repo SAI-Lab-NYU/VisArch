@@ -9,7 +9,9 @@ description:
 # - For 'avatar' an easy option is to use the URL for your GitHub user image: https://api.github.com/users/YOUR_GITHUB_USERNAME
 
 people:
-  TBA
+  - title: TBA
+    avatar: TBA
+    role: TBA
 #   - title: Sai Qian Zhang
 #     avatar: https://avatars.githubusercontent.com/u/11756442?v=4
 #     role: Research Assistant Professor

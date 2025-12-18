@@ -8,7 +8,8 @@ description:
 # - user_groups correspond to hackweek roles defined here: https://uwhackweek.github.io/hackweeks-as-a-service/services/index.html
 # - For 'avatar' an easy option is to use the URL for your GitHub user image: https://api.github.com/users/YOUR_GITHUB_USERNAME
 
-# people:
+people:
+  TBA
 #   - title: Sai Qian Zhang
 #     avatar: https://avatars.githubusercontent.com/u/11756442?v=4
 #     role: Research Assistant Professor

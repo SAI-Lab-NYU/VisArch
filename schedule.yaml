@@ -1,9 +1,9 @@
 timezone: UTC-4 (Eastern Daylight Time)
 tabs:
-- title: TBA
-# - title: VisArch
-#   date: Sunday, March 22
-#   contents:
+- title: VisArch
+  date: Sunday, March 22
+  contents:
+  - title: TBA
 #   - title: Coffee
 #     description: Blank.
 #     time: 8:30 - 8:50

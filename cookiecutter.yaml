@@ -16,7 +16,7 @@ banner:
   # - url: intro.html
   #   title: Event Jupyter Book
   #   new_window: false
-  image: ./{{ cookiecutter.repo_directory }}/assets/images/banner.jpg
+  image: https://github.com/SAI-Lab-NYU/VisArch/blob/main/%7B%7B%20cookiecutter.repo_directory%20%7D%7D/assets/images/banner.jpg
 # The opening session of the event with UTC offset
 event_countdown: "2024-08-07T08:30:00-07:00"
 about:

@@ -73,7 +73,7 @@
                      class="navbar-collapse collapse  justify-content-lg-end me-lg-3">
                     <ul class="nav navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link scrollto" href="#about">
+                            <a class="nav-link scrollto" href="#hero-block">
                                 About
                             </a>
                         </li>
@@ -615,41 +615,18 @@
 <script defer src="assets/js/main.js"></script>
 
 <script>
-    // When a nav link is clicked, update the URL fragment and handle About specially
-    document.addEventListener('DOMContentLoaded', function() {
-        const navLinks = document.querySelectorAll('.nav-link.scrollto');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (!href) return;
-
-                // Special case: About -> scroll to top / hero block when no #about-section present
-                if (href === '#about-section') {
-                    e.preventDefault();
-                    const aboutEl = document.querySelector('#about-section');
-                    if (aboutEl) {
-                        // If the about section exists, navigate to it
-                        window.history.pushState(null, null, href);
-                        aboutEl.scrollIntoView({ behavior: 'smooth' });
-                    } else {
-                        // Otherwise scroll to top / hero and set fragment to #hero-block
-                        const hero = document.querySelector('#hero-block');
-                        window.history.pushState(null, null, '#hero-block');
-                        if (hero) hero.scrollIntoView({ behavior: 'smooth' });
-                        else window.scrollTo({ top: 0, behavior: 'smooth' });
-                    }
-                    return;
-                }
-
-                // Default behavior for other hash links: update URL and smooth-scroll if possible
-                if (href.startsWith('#')) {
-                    e.preventDefault();
-                    window.history.pushState(null, null, href);
-                    const target = document.querySelector(href);
-                    if (target) target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
+  // Update URL fragment when clicking nav links
+  document.querySelectorAll('.nav-link.scrollto').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        window.history.pushState(null, null, href);
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
     });
 </script>
 

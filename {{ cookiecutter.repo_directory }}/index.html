@@ -614,6 +614,21 @@
 <script defer src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
 <script defer src="assets/js/main.js"></script>
 
+<script>
+  // Update URL when clicking navigation links
+  document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-link.scrollto');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          window.history.pushState(null, null, href);
+        }
+      });
+    });
+  });
+</script>
+
 </body>
 
 </html>

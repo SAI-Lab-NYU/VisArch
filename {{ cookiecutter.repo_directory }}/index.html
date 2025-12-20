@@ -73,7 +73,7 @@
                      class="navbar-collapse collapse  justify-content-lg-end me-lg-3">
                     <ul class="nav navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link scrollto" href="#hero-block">
+                            <a class="nav-link scrollto" href="#about">
                                 About
                             </a>
                         </li>
@@ -628,7 +628,13 @@
           window.history.pushState(null, null, href);
           
           // Find target element and scroll to it
-          const target = document.querySelector(href);
+          let target = document.querySelector(href);
+          
+          // Special case: if #about doesn't exist, scroll to #hero-block instead
+          if (!target && href === '#about') {
+            target = document.querySelector('#hero-block');
+          }
+          
           if (target) {
             // Get header height to account for fixed navbar
             const header = document.querySelector('header.fixed-top');

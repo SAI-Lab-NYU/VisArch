@@ -47,12 +47,12 @@ schedule:
 team:
   !include team.yaml
   # !include team/team.yaml
-sponsors:
-  description: ''
-  organizations:
-  - name: TBA
-    website: ''
-    logo_url: "" #https://escience.washington.edu/wp-content/uploads/2015/10/Logo_eScience-stacked.png
+# sponsors:
+#   description: ''
+#   organizations:
+#   - name: TBA
+#     website: ''
+#     logo_url: "" #https://escience.washington.edu/wp-content/uploads/2015/10/Logo_eScience-stacked.png
 footer:
   social:
   - icon: github

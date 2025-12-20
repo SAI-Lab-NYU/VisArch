@@ -615,30 +615,29 @@
 <script defer src="assets/js/main.js"></script>
 
 <script>
-  // Update URL fragment when clicking nav links
-  document.querySelectorAll('.nav-link.scrollto').forEach(link => {
-    link.addEventListener('click', function(e) {
-      const href = this.getAttribute('href');
-      if (href && href.startsWith('#')) {
-        e.preventDefault();
-        window.history.pushState(null, null, href);
-        const target = document.querySelector(href);
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
-    });
-</script>
-
-<script>
-  // Update URL when clicking navigation links
+  // Handle navigation link clicks - update URL and scroll smoothly
   document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link.scrollto');
     navLinks.forEach(link => {
       link.addEventListener('click', function(e) {
         const href = this.getAttribute('href');
-        if (href) {
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          
+          // Update URL
           window.history.pushState(null, null, href);
+          
+          // Find target element and scroll to it
+          const target = document.querySelector(href);
+          if (target) {
+            // Get header height to account for fixed navbar
+            const header = document.querySelector('header.fixed-top');
+            const headerHeight = header ? header.offsetHeight : 0;
+            
+            // Scroll with offset for fixed header
+            const targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+            window.scrollTo({ top: targetTop, behavior: 'smooth' });
+          }
         }
       });
     });

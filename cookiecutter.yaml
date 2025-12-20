@@ -28,7 +28,7 @@ about:
       new_window: True
 applicant_info: VisArch will take place in March 22, 2026. Applications have not yet opened.
 call_for_papers:
-  title: "Call for Papers/Posters"
+  title: "Call for Papers"
   description: "Recent advances in neural rendering and embodied visual intelligence are reshaping AR/VR/XR systems, enabling immersive, interactive, and intelligent experiences across virtual and physical environments. This workshop invites original research contributions that span algorithms, systems, and architectures for neural rendering and AR/VR/XR computing. \n Topics of interest include, but are not limited to:"
   topics:
     - "Neural rendering techniques, including Neural Radiance Fields (NeRF), Gaussian Splatting, and learned scene representations"

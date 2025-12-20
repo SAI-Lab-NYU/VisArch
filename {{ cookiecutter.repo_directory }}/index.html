@@ -390,10 +390,10 @@
 {%- if cookiecutter.team %}
 <section id="team" class="team section">
     <div class="container">
-        <h3 class="section-heading text-center mb-3">Meet the team</h3>
-        <div class="section-intro text-center single-col-max mx-auto mb-5">
+        <h3 class="section-heading text-center mb-3">Workshop Organizers</h3>
+        <!-- <div class="section-intro text-center single-col-max mx-auto mb-5">
             {{ cookiecutter.team['description'] }}
-        </div>
+        </div> -->
         {%- if cookiecutter.team['people'] %}
         <div class="row">
             {%- for person in cookiecutter.team['people'] %}
@@ -461,26 +461,26 @@
                             <div class="modal-body p-0">
                                 <div class="theme-bg-light p-5">
                                     <div class="row">
-                                        <div
+                                        <!-- <div
                                             class="col-12 col-md-auto text-center">
                                             <img
                                                 class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto"
                                                 src="{{ person['avatar'] }}"
                                                 alt=""/>
-                                        </div>
+                                        </div> -->
 
                                         <div
                                             class="col text-center text-md-start mx-auto">
                                             <h2 class="name mb-2">
                                                 {{person['title']}}
                                             </h2>
-                                            <div class="meta">
+                                            <!-- <div class="meta">
                                                 {{ person['role'] }}
-                                            </div>
+                                            </div> -->
                                             <div class="meta mb-2">
                                                 {{person['organizations']|map(attribute='name')|join(' &amp; ')}}
                                             </div>
-                                            {%- if 'social' in person %}
+                                            <!-- {%- if 'social' in person %}
                                             <ul class="social-list list-inline mb-0">
                                                 {%- for social in person['social'] %}
                                                 <li class="list-inline-item">
@@ -491,13 +491,13 @@
                                                 {%- endfor %}
                                             </ul>
                                             {%- endif %}
-                                            <!--//social-list-->
+                                            <!--//social-list--> -->
                                         </div>
                                         <!--//col-->
                                     </div>
                                     <!--//row-->
                                 </div>
-                                <div class="desc p-4 p-lg-5">
+                                <!-- <div class="desc p-4 p-lg-5">
                                     <div class="mb-2">
                                         {%- for group in person['user_groups'] %}
                                         <img
@@ -517,7 +517,7 @@
                                         </ul>
                                     </div>
                                     {%- endif %}
-                                </div>
+                                </div> -->
                             </div>
                             <!--//modal-body-->
                         </div>

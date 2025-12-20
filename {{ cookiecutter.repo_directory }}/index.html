@@ -218,13 +218,20 @@
 <!-- </section> -->
 
 <section id="call-for-papers-section" class="call-for-papers-section section theme-bg-light">
-  <h2 class="text-center">{{ cookiecutter.call_for_papers.title }}</h2>
-  <div class="d-flex justify-content-center">
-    <ul class="text-start" style="max-width: 600px;">
-      {% for topic in cookiecutter.call_for_papers.topics %}
-        <li>{{ topic }}</li>
-      {% endfor %}
-    </ul>
+  <div class="container">
+    <h2 class="text-center mb-4">{{ cookiecutter.call_for_papers.title }}</h2>
+    <div class="section-intro text-center single-col-max mx-auto mb-4">
+      {%- markdown -%}
+      {{ cookiecutter.call_for_papers.description|safe }}
+      {%- endmarkdown -%}
+    </div>
+    <div class="d-flex justify-content-center">
+      <ul class="text-start" style="max-width: 600px;">
+        {% for topic in cookiecutter.call_for_papers.topics %}
+          <li>{{ topic }}</li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </section>
 <!--//about-section-->

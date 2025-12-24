@@ -225,12 +225,56 @@
       {{ cookiecutter.call_for_papers.description|safe }}
       {%- endmarkdown -%}
     </div>
+    
     <div class="d-flex justify-content-center">
-      <ul class="text-start" style="max-width: 750px;">
-        {% for topic in cookiecutter.call_for_papers.topics %}
-          <li>{{ topic }}</li>
-        {% endfor %}
-      </ul>
+      <div style="max-width: 750px; text-align: left;">
+        <!-- Important Dates -->
+        {% if cookiecutter.call_for_papers.important_dates %}
+        <h4 class="mt-4 mb-3">Important Dates</h4>
+        <ul class="mb-4">
+          {% for date in cookiecutter.call_for_papers.important_dates %}
+            <li>{{ date }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        
+        <!-- Topics of Interest -->
+        <h4 class="mt-4 mb-3">Topics of Interest</h4>
+        <p>We invite submissions on topics including, but not limited to:</p>
+        <ul class="mb-4">
+          {% for topic in cookiecutter.call_for_papers.topics %}
+            <li>{{ topic }}</li>
+          {% endfor %}
+        </ul>
+        
+        <!-- Submission Guidelines -->
+        {% if cookiecutter.call_for_papers.submission_guidelines %}
+        <h4 class="mt-4 mb-3">Submission Guidelines</h4>
+        <ul class="mb-4">
+          {% for guideline in cookiecutter.call_for_papers.submission_guidelines %}
+            <li>
+              {%- markdown -%}
+              {{ guideline|safe }}
+              {%- endmarkdown -%}
+            </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        
+        <!-- Additional Information -->
+        {% if cookiecutter.call_for_papers.additional_info %}
+        <h4 class="mt-4 mb-3">Additional Information</h4>
+        <ul>
+          {% for info in cookiecutter.call_for_papers.additional_info %}
+            <li>
+              {%- markdown -%}
+              {{ info|safe }}
+              {%- endmarkdown -%}
+            </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
     </div>
   </div>
 </section>

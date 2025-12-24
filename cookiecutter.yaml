@@ -39,6 +39,17 @@ call_for_papers:
     - "Distributed, edge, and edge–cloud systems for scalable visual processing"
     - "Simulation frameworks, benchmarks, and datasets for neural rendering and AR/VR/XR evaluation"
     - "Applications in robotics, telepresence, and embodied AI, including interactive and collaborative environments"
+  important_dates:
+    - "Submission Deadline: February 15, 2026 (Anywhere on Earth)"
+    - "Author Notification: March 8, 2026"
+  submission_guidelines:
+    - "Papers must be no more than 4 pages, following the ACM format."
+    - "Authors should use the sigplan proceedings template from the ACM acmart LaTeX class, available on the official ACM website: https://www.acm.org/publications/proceedings-template"
+    - "Submissions must be anonymous and should not include any author identifying information."
+    - "Both unpublished and previously published works, as well as works in progress, are welcome."
+  additional_info:
+    - "Proceedings will not be published."
+    - "Contact: sai.zhang@nyu.edu"
 # Redirect the site to a different domain.
 #redirect:
 #    url: https://go.somehwere.else

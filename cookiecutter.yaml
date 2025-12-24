@@ -1,8 +1,8 @@
 repo_directory: html
 name: VisArch
 apply:
-  url: '#'
-  title: Application coming soon
+  url: 'https://easychair.org/conferences/?conf=visarch26'
+  title: Submit
 hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
   description: "Workshop on Systems and Architectures for Neural Rendering, AR/VR, and Visual Computing."

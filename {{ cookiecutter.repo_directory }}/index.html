@@ -231,9 +231,9 @@
         <!-- Important Dates -->
         {% if cookiecutter.call_for_papers.important_dates %}
         <h4 class="mt-4 mb-3">Important Dates</h4>
-        <ul class="mb-4" style="line-height: 1.8;">
+        <ul class="mb-4" style="line-height: 1.6;">
           {% for date in cookiecutter.call_for_papers.important_dates %}
-            <li>{%- markdown -%}{{ date|safe }}{%- endmarkdown -%}</li>
+            <li style="margin-bottom: 0.8rem;">{%- markdown -%}{{ date|safe }}{%- endmarkdown -%}</li>
           {% endfor %}
         </ul>
         {% endif %}
@@ -241,18 +241,18 @@
         <!-- Topics of Interest -->
         <h4 class="mt-4 mb-3">Topics of Interest</h4>
         <p>We invite submissions on topics including, but not limited to:</p>
-        <ul class="mb-4" style="line-height: 1.8;">
+        <ul class="mb-4" style="line-height: 1.6;">
           {% for topic in cookiecutter.call_for_papers.topics %}
-            <li>{{ topic }}</li>
+            <li style="margin-bottom: 0.8rem;">{{ topic }}</li>
           {% endfor %}
         </ul>
         
         <!-- Submission Guidelines -->
         {% if cookiecutter.call_for_papers.submission_guidelines %}
         <h4 class="mt-4 mb-3">Submission Guidelines</h4>
-        <ul class="mb-4" style="line-height: 1.8;">
+        <ul class="mb-4" style="line-height: 1.6;">
           {% for guideline in cookiecutter.call_for_papers.submission_guidelines %}
-            <li>{%- markdown -%}{{ guideline|safe }}{%- endmarkdown -%}</li>
+            <li style="margin-bottom: 0.8rem;">{%- markdown -%}{{ guideline|safe }}{%- endmarkdown -%}</li>
           {% endfor %}
         </ul>
         {% endif %}
@@ -260,9 +260,9 @@
         <!-- Additional Information -->
         {% if cookiecutter.call_for_papers.additional_info %}
         <h4 class="mt-4 mb-3">Additional Information</h4>
-        <ul style="line-height: 1.8;">
+        <ul style="line-height: 1.6;">
           {% for info in cookiecutter.call_for_papers.additional_info %}
-            <li>{%- markdown -%}{{ info|safe }}{%- endmarkdown -%}</li>
+            <li style="margin-bottom: 0.8rem;">{%- markdown -%}{{ info|safe }}{%- endmarkdown -%}</li>
           {% endfor %}
         </ul>
         {% endif %}

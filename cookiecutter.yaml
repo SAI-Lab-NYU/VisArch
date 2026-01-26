@@ -43,7 +43,7 @@ call_for_papers:
     - "**Submission Deadline**: February 15, 2026 (Anywhere on Earth)"
     - "**Author Notification**: March 8, 2026"
   submission_guidelines:
-    - "Papers must be **no more than 4 pages**, following the **ACM format**."
+    - "Papers must be prepared and submitted as a single file: **no more than 4 pages for the main paper**, with unlimited pages for references, following the **ACM format**."
     - "Authors should use the **sigplan proceedings template** from the ACM **acmart** LaTeX class, available on the official ACM website: https://www.acm.org/publications/proceedings-template."
     - "Submissions must be **anonymous** and should not include any author identifying information."
     - "Both unpublished and previously published works, as well as works in progress, are welcome."

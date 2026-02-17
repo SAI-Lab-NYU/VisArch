@@ -40,7 +40,7 @@ call_for_papers:
     - "Simulation frameworks, benchmarks, and datasets for neural rendering and AR/VR/XR evaluation."
     - "Applications in robotics, telepresence, and embodied AI, including interactive and collaborative environments."
   important_dates:
-    - "**Submission Deadline**: February 22, 2026 (Anywhere on Earth)"
+    - "**Submission Deadline**: February 24, 2026 (Anywhere on Earth)"
     - "**Author Notification**: February 28, 2026"
   submission_guidelines:
     - "Papers must be prepared and submitted as a single file: **no more than 4 pages for the main paper**, with unlimited pages for references, following the **ACM format**."

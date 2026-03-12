@@ -16,19 +16,19 @@ tabs:
   #   leads:
   #   - TBA
 
-  - title: Unlocking the Potential of Immersive Computing: An Interdisciplinary, End-to-End Systems Approach
+  - title: "Unlocking the Potential of Immersive Computing: An Interdisciplinary, End-to-End Systems Approach"
     time: 9:00 - 9:45
     speaker: Sarita Adve (the Richard T. Cheng Professor of Computer Science at the University of Illinois Urbana-Champaign)
     abstract: |-
       Immersive computing – including virtual, augmented, and mixed reality (collectively extended reality or XR) - has the potential to transform most industries and human activities. Immersive systems that provide comfortable, mobile, all day, trustworthy, rich experiences remain a grand challenge. The IMMERSE Center for Immersive Computing at Illinois brings together campuswide expertise in immersive technologies, applications, and human experience to address this grand challenge. I will first briefly describe the wide range of interdisciplinary work enabled by IMMERSE and then focus on end-to-end systems work inspired by such an approach.  Central to this systems work is the idea that addressing our grand challenge will require resource-constrained XR devices to harness the compute power of the edge and the cloud over wireless networks, without compromising the human experience. We show some of the first end-to-end distributed XR systems that provide low power, real time head tracking, rendering with 6DoF reprojection, scene reconstruction, semantic understanding, and other XR features by judiciously offloading XR computations over a wireless network without compromising user experience. Much of this work is enabled by the ILLIXR (ILLinois eXtended Reality) open-source end-to-end XR system and research testbed that we designed and maintain to democratize XR systems research. This work represents a collaboration with a large number of students, faculty, and staff.
 
-  - title: The Future of Extended Reality is Adaptive
+  - title: "The Future of Extended Reality is Adaptive"
     time: 9:45 - 10:30
     speaker: David Lindlbauer (Assistant Professor at the Human-Computer Interaction Institute at Carnegie Mellon University)
     abstract: |-
       New advanced interactive technologies such as Extended Reality (XR) have the potential to transform the way we interact with digital information, and promise a rich set of applications, ranging from productivity and architecture to interaction with smart devices. Current approaches to interactive XR systems, however, are static, and users need to manually adjust factors such as the visibility, placement and appearance of their user interface every time they change their task or environment. This is distracting and leads to information overload. To overcome these challenges, we aim to understand and predict how users perceive and interact with digital information, and use this information in context-aware systems that automatically adapt when, where and how to present virtual elements. In this talk, I will present computational and multimodal approaches that leverage contextual knowledge about users, the environment and system capabilities to create advanced interactive experiences. Our systems increase the applicability of XR and advanced interactive systems, with the goal to seamlessly blend the virtual and physical world.
 
-  - title: Keynote: Decentralizing the Brain: From CPU-Centric Servers to Intelligent Composable Resources
+  - title: "AI x Hardware for Wearable Contextual AI Systems"
     time: 10:30 - 11:15
     speaker: Vincent T. Lee (Research Scientist at Reality Labs Silicon Research at Meta)
     abstract: |-

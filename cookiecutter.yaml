@@ -1,5 +1,5 @@
 repo_directory: html
-name: VisArch
+name: VisArch-1st
 apply:
   url: 'https://easychair.org/conferences/?conf=visarch26'
   title: Submit

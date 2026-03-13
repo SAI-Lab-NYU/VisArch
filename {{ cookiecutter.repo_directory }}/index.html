@@ -447,16 +447,9 @@
             {%- for keynote in cookiecutter.keynotes.keynotes %}
             <div class="col-md-10 col-lg-8 mb-5" id="keynote-{{ keynote.id }}">
                 <div class="card border-0 shadow-sm h-100">
-                    <div class="row g-0 align-items-stretch">
-                        {%- if keynote.photo %}
-                        <div class="col-md-4 p-3">
-                            <img src="{{ keynote.photo }}"
-                                 class="img-fluid w-100"
-                                 alt="{{ keynote.speaker }}">
-                        </div>
-                        {%- endif %}
-                        <div class="{% if keynote.photo %}col-md-8{% else %}col-12{% endif %}">
-                            <div class="card-body">
+                    <div class="card-body">
+                        <div class="row g-0 align-items-center">
+                            <div class="{% if keynote.photo %}col-md-8{% else %}col-12{% endif %}">
                                 <h4 class="card-title mb-2">
                                     {{ keynote.title }}
                                 </h4>
@@ -475,34 +468,45 @@
                                 </h5>
                                 {%- endif %}
                                 {%- if keynote.speaker_title %}
-                                <div class="text-muted mb-3">
+                                <div class="text-muted mb-0">
                                     {{ keynote.speaker_title }}
                                 </div>
                                 {%- endif %}
-
-                                {%- if keynote.bio %}
-                                <div class="mb-3">
-                                    <strong>Bio.</strong>
-                                    <div class="mt-1">
-                                        {%- markdown -%}
-                                        {{ keynote.bio|safe }}
-                                        {%- endmarkdown -%}
-                                    </div>
-                                </div>
-                                {%- endif %}
-
-                                {%- if keynote.abstract %}
-                                <div>
-                                    <strong>Abstract.</strong>
-                                    <div class="mt-1">
-                                        {%- markdown -%}
-                                        {{ keynote.abstract|safe }}
-                                        {%- endmarkdown -%}
-                                    </div>
-                                </div>
-                                {%- endif %}
                             </div>
+                            {%- if keynote.photo %}
+                            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                                <img src="{{ keynote.photo }}"
+                                     class="img-fluid"
+                                     alt="{{ keynote.speaker }}">
+                            </div>
+                            {%- endif %}
                         </div>
+
+                        {%- if keynote.bio or keynote.abstract %}
+                        <div class="mt-4">
+                            {%- if keynote.bio %}
+                            <div class="mb-3">
+                                <strong>Bio.</strong>
+                                <div class="mt-1">
+                                    {%- markdown -%}
+                                    {{ keynote.bio|safe }}
+                                    {%- endmarkdown -%}
+                                </div>
+                            </div>
+                            {%- endif %}
+
+                            {%- if keynote.abstract %}
+                            <div>
+                                <strong>Abstract.</strong>
+                                <div class="mt-1">
+                                    {%- markdown -%}
+                                    {{ keynote.abstract|safe }}
+                                    {%- endmarkdown -%}
+                                </div>
+                            </div>
+                            {%- endif %}
+                        </div>
+                        {%- endif %}
                     </div>
                 </div>
             </div>

@@ -2,31 +2,31 @@ intro: "The following papers have been accepted for presentation at the workshop
 papers:
   - title: "Dynamic Resolution Adaptation for the Vision Pipeline in Autonomous Driving"
     authors: "Mustafa Goktan Gudukbay, Wanhang Lu, Mahmut Kandemir, Kiwan Maeng and Anand Sivasubramaniam"
-    pdf: "https://github.com/SAI-Lab-NYU/VisArch/blob/main/papers/VisArch2.pdf"
+    pdf: "https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch/main/papers/VisArch2.pdf"
 
   - title: "ACT out XR poses"
     authors: "Wanhang Lu, Mustafa Goktan Gudukbay, Yingtian Zhang, Yan Kang, Anand Sivasubramaniam, Kiwan Maeng and Mahmut Taylan Kandemir"
-    pdf: "https://github.com/SAI-Lab-NYU/VisArch/blob/main/papers/VisArch3.pdf"
+    pdf: "https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch/main/papers/VisArch3.pdf"
 
   - title: "Pocket-SLAM: Rendering-Area-Aware Pruning for Memory-Efficient 3DGS-SLAM"
     authors: "Leshu Li, Jie Peng and Yang Zhao"
-    pdf: "https://github.com/SAI-Lab-NYU/VisArch/blob/main/papers/VisArch4.pdf"
+    pdf: "https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch/main/papers/VisArch4.pdf"
 
   - title: "On Scaling Up 3D Gaussian Splatting Training"
     authors: "Hexu Zhao, Haoyang Weng, Daohan Lu, Ang Li, Jinyang Li, Aurojit Panda and Saining Xie"
-    pdf: "https://github.com/SAI-Lab-NYU/VisArch/blob/main/papers/VisArch5.pdf"
+    pdf: "https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch/main/papers/VisArch5.pdf"
 
   - title: "Color-Aware Early Termination for Efficient 3D Gaussian Splatting in Real-Time AR/VR Execution"
     authors: "Handong Ji, Haiyu Wang and Sai Qian Zhang"
-    pdf: "https://github.com/SAI-Lab-NYU/VisArch/blob/main/papers/VisArch6.pdf"
+    pdf: "https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch/main/papers/VisArch6.pdf"
 
   - title: "TokenSense: Tokenized Sensing for Efficient Visual Processing"
     authors: "Yiwen Liang and Weidong Cao"
-    pdf: "https://github.com/SAI-Lab-NYU/VisArch/blob/main/papers/VisArch7.pdf"
+    pdf: "https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch/main/papers/VisArch7.pdf"
 
   - title: "LIBERO-LQ: A Latency- and Quality-Aware Benchmark for Vision–Language–Action Models"
     authors: "Tian Xie, Zishen Wan and Yang Zhao"
-    pdf: "https://github.com/SAI-Lab-NYU/VisArch/blob/main/papers/VisArch8.pdf"
+    pdf: "https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch/main/papers/VisArch8.pdf"
     
     
 # Example entries (uncomment and fill to use):

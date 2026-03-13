@@ -5,7 +5,7 @@ keynotes:
     speaker: Sarita Adve
     speaker_url: "https://sadve.cs.illinois.edu/"
     speaker_title: "The Richard T. Cheng Professor of Computer Science at the University of Illinois Urbana-Champaign (UIUC)"
-    photo: "assets/images/keynotes/sarita-adve.jpg"  # TODO: replace with actual path
+    photo: "/assets/images/keynotes/sarita-adve.jpg"  # TODO: replace with actual path
     bio: |-
       Sarita Adve is the Richard T. Cheng Professor of Computer Science at the University of Illinois Urbana-Champaign where she directs the campus-wide IMMERSE Center for Immersive Computing. Her research interests span the computing system stack from hardware to applications, with a current focus on extended reality (XR) systems. Her group maintains ILLIXR (Illinois Extended Reality), an open-source XR system and research testbed to democratize XR research, development, and benchmarking. Her work on the data-race-free, Java, and C++ memory models forms the foundation for memory models used in most hardware and software systems today. She is also known for her work on heterogeneous systems and software-driven approaches for hardware resiliency. She is a member of the American Academy of Arts and Sciences, a fellow of the ACM, IEEE, and AAAS, and a recipient of the ACM/IEEE-CS Ken Kennedy award, the SIGARCH Maurice Wilkes award, the Computing Research Association (CRA) distinguished service award for the CARES movement, and the IIT Bombay distinguished alumni award.
     abstract: |-
@@ -16,7 +16,7 @@ keynotes:
     speaker: David Lindlbauer
     speaker_url: "https://www.davidlindlbauer.com/"
     speaker_title: "Assistant Professor at the Human-Computer Interaction Institute at Carnegie Mellon University (CMU)"
-    photo: "assets/images/keynotes/david-lindlbauer.jpg"  # TODO: replace with actual path
+    photo: "/assets/images/keynotes/david-lindlbauer.jpg"  # TODO: replace with actual path
     bio: |-
       David Lindlbauer is an Assistant Professor at the Human-Computer Interaction Institute at Carnegie Mellon University, where he leads the Augmented Perception Lab and co-directs the CMU Extended Reality Technology Center. His research focuses on understanding how humans perceive and interact with digital information, and to build technology that goes beyond the flat displays of PCs and smartphones to advance our capabilities when interacting with the digital world. To achieve this, he creates and studies enabling technologies and computational approaches that control when, where and how virtual content is presented to increase the usability of Augmented Reality and Virtual Reality interfaces. Prof. Lindlbauer holds a PhD from TU Berlin and was a postdoctoral researcher at ETH Zurich before joining CMU. He has published more than 45 scientific papers at premier venues in Human-Computer Interaction such as ACM CHI and ACM UIST. His work has attracted media attention in outlets such as MIT Technology Review, Fast Company Design, and Shiropen Japan.
     abstract: |-
@@ -27,7 +27,7 @@ keynotes:
     speaker: Vincent T. Lee
     speaker_url: "https://scholar.google.com/citations?user=_heZbNgAAAAJ&hl=en"
     speaker_title: "Research Scientist at Reality Labs Silicon Research at Meta (Meta)"
-    photo: "assets/images/keynotes/vincent-lee.png"  # TODO: replace with actual path
+    photo: "/assets/images/keynotes/vincent-lee.png"  # TODO: replace with actual path
     bio: |-
       Vincent T. Lee is a Research Scientist at Reality Labs Silicon Research @ Meta. He received his Ph.D. in Computer Science and Engineering from the University of Washington, specializing in Computer Architecture, in 2019. His current research interests are AI-assisted electronic design automation and methodology, and full system architecture modeling for future generation wearable XR systems. His previous work bridges the gap between hardware design and a broad range of domains including stochastic computing, synthesis and solver-aided techniques, homomorphic encryption, similarity search, and machine perception.
     abstract: |-

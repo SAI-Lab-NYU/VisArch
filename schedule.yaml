@@ -40,6 +40,12 @@ tabs:
     speaker_url: "https://scholar.google.com/citations?user=_heZbNgAAAAJ&hl=en"
     speaker_title: Research Scientist at Reality Labs Silicon Research at Meta (Meta)
 
+  - title: Break
+    time: 11:15 - 11:30
+
+  - title: Poster Session
+    time: 11:30 - 12:00
+
   # - title: Break
   #   description: null
   #   time: 10:30 - 11:00

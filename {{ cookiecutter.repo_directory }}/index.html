@@ -426,12 +426,13 @@
             <ul class="list-unstyled">
                 {%- for paper in cookiecutter.accepted_papers.papers %}
                 <li class="mb-4">
+                    {%- if paper.pdf %}
+                    <strong><a href="{{ paper.pdf }}" target="_blank" rel="noopener" class="text-decoration-none">{{ paper.title }}</a></strong>
+                    {%- else %}
                     <strong>{{ paper.title }}</strong>
+                    {%- endif %}
                     {%- if paper.authors %}
                     <br><span class="text-muted">{{ paper.authors }}</span>
-                    {%- endif %}
-                    {%- if paper.pdf %}
-                    <br><a href="{{ paper.pdf }}" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>PDF</a>
                     {%- endif %}
                 </li>
                 {%- endfor %}

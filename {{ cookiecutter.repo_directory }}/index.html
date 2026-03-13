@@ -33,7 +33,8 @@
             background: url("{{cookiecutter.banner['image']}}") no-repeat center center;
             background-size: cover;
         }
-        .paper-title-link:hover {
+        .paper-title-link:hover,
+        .speaker-link:hover {
             text-decoration: underline !important;
         }
     </style>
@@ -368,7 +369,11 @@
 
                         {% if 'speaker' in content %}
                         <div class="mb-1" style="font-weight: 600;">
+                            {%- if content.get('speaker_url') %}
+                            <a href="{{ content['speaker_url'] }}" target="_blank" rel="noopener" class="speaker-link text-decoration-none">{{ content['speaker'] }}</a>
+                            {%- else %}
                             {{ content['speaker'] }}
+                            {%- endif %}
                         </div>
                         {% if 'speaker_title' in content %}
                         <div class="mb-2 text-muted">

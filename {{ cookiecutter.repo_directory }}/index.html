@@ -33,6 +33,9 @@
             background: url("{{cookiecutter.banner['image']}}") no-repeat center center;
             background-size: cover;
         }
+        .paper-title-link:hover {
+            text-decoration: underline !important;
+        }
     </style>
 </head>
 
@@ -427,7 +430,7 @@
                 {%- for paper in cookiecutter.accepted_papers.papers %}
                 <li class="mb-4">
                     {%- if paper.pdf %}
-                    <strong><a href="{{ paper.pdf }}" target="_blank" rel="noopener" class="text-decoration-none">{{ paper.title }}</a></strong>
+                    <strong><a href="{{ paper.pdf }}" target="_blank" rel="noopener" class="paper-title-link text-decoration-none">{{ paper.title }}</a></strong>
                     {%- else %}
                     <strong>{{ paper.title }}</strong>
                     {%- endif %}

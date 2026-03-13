@@ -449,7 +449,7 @@
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-body">
                         <div class="row g-0 align-items-center">
-                            <div class="{% if keynote.photo %}col-md-9{% else %}col-12{% endif %}">
+                            <div class="{% if keynote.photo %}col-md-10{% else %}col-12{% endif %}">
                                 <h4 class="card-title mb-2">
                                     {{ keynote.title }}
                                 </h4>
@@ -474,7 +474,7 @@
                                 {%- endif %}
                             </div>
                             {%- if keynote.photo %}
-                            <div class="col-md-3 text-md-center mt-3 mt-md-0">
+                            <div class="col-md-2 text-md-center mt-3 mt-md-0">
                                 <img src="{{ keynote.photo }}"
                                      class="img-fluid"
                                      style="max-width: 160px;"

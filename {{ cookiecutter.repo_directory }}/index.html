@@ -364,9 +364,14 @@
                         {% endif %}
 
                         {% if 'speaker' in content %}
-                        <div class="mb-2" style="font-weight: 600;">
+                        <div class="mb-1" style="font-weight: 600;">
                             {{ content['speaker'] }}
                         </div>
+                        {% if 'speaker_title' in content %}
+                        <div class="mb-2 text-muted">
+                            {{ content['speaker_title'] }}
+                        </div>
+                        {% endif %}
                         {% endif %}
 
                         <div class="desc">

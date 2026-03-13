@@ -88,6 +88,11 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link scrollto" href="#accepted-papers">
+                                Accepted Papers
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link scrollto" href="#team">
                                 Team
                             </a>
@@ -402,6 +407,36 @@
 </section>
 <!--//schedule-section-->
 {% endif %}
+
+<section id="accepted-papers" class="accepted-papers section theme-bg-light">
+    <div class="container">
+        <h3 class="section-heading text-center mb-3">Accepted Papers</h3>
+        {%- if cookiecutter.accepted_papers and cookiecutter.accepted_papers.papers|length > 0 %}
+        <div class="section-intro text-center single-col-max mx-auto mb-4">
+            {%- if cookiecutter.accepted_papers.intro %}
+            {{ cookiecutter.accepted_papers.intro }}
+            {%- endif %}
+        </div>
+        <div class="single-col-max mx-auto">
+            <ul class="list-unstyled">
+                {%- for paper in cookiecutter.accepted_papers.papers %}
+                <li class="mb-4">
+                    <strong>{{ paper.title }}</strong>
+                    {%- if paper.authors %}
+                    <br><span class="text-muted">{{ paper.authors }}</span>
+                    {%- endif %}
+                    {%- if paper.pdf %}
+                    <br><a href="{{ paper.pdf }}" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>PDF</a>
+                    {%- endif %}
+                </li>
+                {%- endfor %}
+            </ul>
+        </div>
+        {%- else %}
+        <p class="text-center text-muted">Accepted papers will be listed here after the notification deadline.</p>
+        {%- endif %}
+    </div>
+</section>
 
 <div class="container">
     <hr>

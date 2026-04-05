@@ -10,12 +10,12 @@ photos:
   - src: assets/images/gallery/poster1.jpg
     alt: Poster discussion
     caption: "Poster discussion"
-  - src: assets/images/gallery/poster2.jpg
+  - src: assets/images/gallery/poster2.jpeg
     alt: Poster discussion
     caption: "Poster discussion"
-  - src: assets/images/gallery/poster3.jpg
+  - src: assets/images/gallery/poster3.jpeg
     alt: Poster discussion
     caption: "Poster discussion"
-  - src: assets/images/gallery/poster4.jpg
+  - src: assets/images/gallery/poster4.jpeg
     alt: Poster discussion
     caption: "Poster discussion"

@@ -38,7 +38,8 @@
             text-decoration: underline !important;
         }
 
-        #gallery .carousel-item {
+        /* Dark backdrop only behind the image, not the caption */
+        #gallery .gallery-slide-media {
             background-color: #1a1a1a;
         }
 
@@ -641,10 +642,12 @@
                 <div class="carousel-inner rounded">
                     {%- for photo in cookiecutter.gallery.photos %}
                     <div class="carousel-item{% if loop.first %} active{% endif %}">
-                        <img src="{{ photo.src }}"
-                             class="d-block w-100"
-                             alt="{{ photo.alt or 'Workshop photo' }}"
-                             loading="lazy">
+                        <div class="gallery-slide-media">
+                            <img src="{{ photo.src }}"
+                                 class="d-block w-100"
+                                 alt="{{ photo.alt or 'Workshop photo' }}"
+                                 loading="lazy">
+                        </div>
                         {%- if photo.caption %}
                         <div class="gallery-caption-below text-center">
                             <p class="mb-0">{{ photo.caption }}</p>

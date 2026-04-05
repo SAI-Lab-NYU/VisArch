@@ -59,6 +59,8 @@ keynotes:
   !include keynotes.yaml
 accepted_papers:
   !include accepted_papers.yaml
+gallery:
+  !include gallery.yaml
 team:
   !include team.yaml
   # !include team/team.yaml

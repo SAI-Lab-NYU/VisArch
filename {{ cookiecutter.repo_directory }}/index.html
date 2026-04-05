@@ -37,6 +37,23 @@
         .speaker-link:hover {
             text-decoration: underline !important;
         }
+
+        #gallery .carousel-item {
+            background-color: #1a1a1a;
+        }
+
+        #gallery .carousel-item img {
+            max-height: 75vh;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        #gallery .carousel-caption {
+            background: rgba(0, 0, 0, 0.55);
+            border-radius: 0.25rem;
+            padding: 0.5rem 0.75rem;
+            bottom: 1rem;
+        }
     </style>
 </head>
 
@@ -101,6 +118,13 @@
                                 Accepted Papers
                             </a>
                         </li>
+                        {%- if cookiecutter.gallery and cookiecutter.gallery.photos and cookiecutter.gallery.photos|length > 0 %}
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#gallery">
+                                Photos
+                            </a>
+                        </li>
+                        {%- endif %}
                         <li class="nav-item">
                             <a class="nav-link scrollto" href="#team">
                                 Team
@@ -547,6 +571,69 @@
         {%- endif %}
     </div>
 </section>
+
+{%- if cookiecutter.gallery and cookiecutter.gallery.photos and cookiecutter.gallery.photos|length > 0 %}
+<section id="gallery" class="gallery-section section theme-bg-light">
+    <div class="container">
+        <h3 class="section-heading text-center mb-3">
+            {{ cookiecutter.gallery.title or 'Workshop Photos' }}
+        </h3>
+        {%- if cookiecutter.gallery.intro %}
+        <div class="section-intro text-center single-col-max mx-auto mb-4">
+            {{ cookiecutter.gallery.intro }}
+        </div>
+        {%- endif %}
+        <div class="single-col-max mx-auto">
+            <div id="workshopPhotoCarousel"
+                 class="carousel slide carousel-dark"
+                 data-bs-ride="carousel"
+                 data-bs-interval="5000"
+                 data-bs-keyboard="true"
+                 data-bs-touch="true">
+                <div class="carousel-indicators">
+                    {%- for photo in cookiecutter.gallery.photos %}
+                    <button type="button"
+                            data-bs-target="#workshopPhotoCarousel"
+                            data-bs-slide-to="{{ loop.index0 }}"
+                            {%- if loop.first %}
+                            class="active"
+                            aria-current="true"
+                            {%- endif %}
+                            aria-label="Slide {{ loop.index }}"></button>
+                    {%- endfor %}
+                </div>
+                <div class="carousel-inner rounded">
+                    {%- for photo in cookiecutter.gallery.photos %}
+                    <div class="carousel-item{% if loop.first %} active{% endif %}">
+                        <img src="{{ photo.src }}"
+                             class="d-block w-100"
+                             alt="{{ photo.alt or 'Workshop photo' }}"
+                             loading="lazy">
+                        {%- if photo.caption %}
+                        <div class="carousel-caption d-none d-md-block">
+                            <p class="mb-0">{{ photo.caption }}</p>
+                        </div>
+                        {%- endif %}
+                    </div>
+                    {%- endfor %}
+                </div>
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#workshopPhotoCarousel"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#workshopPhotoCarousel"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+{%- endif %}
 
 <div class="container">
     <hr>

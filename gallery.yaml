@@ -1,0 +1,21 @@
+# Photos shown in a horizontal carousel on the splash page (above Workshop Organizers).
+# Leave `photos: []` to hide the section.
+title: Workshop Photos
+intro: ""
+# Example:
+photos:
+#   - src: assets/images/gallery/session-1.jpg
+#     alt: VisArch opening session
+#     caption: Opening remarks
+  - src: assets/images/gallery/poster1.jpg
+    alt: Poster discussion
+    caption: "Poster discussion"
+  - src: assets/images/gallery/poster2.jpg
+    alt: Poster discussion
+    caption: "Poster discussion"
+  - src: assets/images/gallery/poster3.jpg
+    alt: Poster discussion
+    caption: "Poster discussion"
+  - src: assets/images/gallery/poster4.jpg
+    alt: Poster discussion
+    caption: "Poster discussion"
